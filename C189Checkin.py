@@ -48,10 +48,12 @@ def checkin():
         else:
             print(f"已经签到过了，签到获得{netdiskBonus}M空间")
     except Exception as e:
+        text = "解析签到消息失败!"
         pushMessage({
-            "text": "解析签到消息失败!",
+            "text": text,
             "desp": str(e)
         })
+        print(text)
 
 
 # 抽奖
@@ -172,10 +174,12 @@ def login(username, password):
         r = tianyi_session.get(redirect_url)
         return tianyi_session
     except Exception as e:
+        text = "登录账号出现异常!"
         pushMessage({
-            "text": "登录账号出现异常!",
+            "text": text,
             "desp": str(e)
         })
+        print(text)
 
 
 if __name__ == "__main__":
