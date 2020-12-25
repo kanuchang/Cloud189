@@ -76,7 +76,10 @@ def lottery(few):
                 })
             print(f"第{str(few)}次抽奖出错")
     else:
-        print(f"第{str(few)}次抽奖完成")
+        message = ''
+        if "prizeName" in response.json():
+            message = ",获得" + response.json()['prizeName']
+        print(f"第{str(few)}次抽奖完成{message}")
 
 
 BI_RM = list("0123456789abcdefghijklmnopqrstuvwxyz")
@@ -155,8 +158,8 @@ def login(username, password):
         "mailSuffix": "@189.cn",
         "paramId": paramId
     }
-    r = tianyi_session.post(url, data=data, headers=headers, timeout=5)
     try:
+        r = tianyi_session.post(url, data=data, headers=headers, timeout=5)
         if r.json()['result'] == 0:
             print(r.json()['msg'])
         else:
