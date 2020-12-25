@@ -50,7 +50,7 @@ xxxxxxxx
 ## 四、查看运行结果
 Actions > Cloud189Checkin > build  
 能看到如下图所示，表示成功  
-![](http://tu.yaohuo.me/imgs/2020/06/b9e596c99f3835e0.png)
+![](https://tu.yaohuo.me/imgs/2020/12/fd318c951e1c9b3b.jpg)
 
 此后，将会在每天10:00-10:45之间和22:00-22:45之间各签到一次  
 若有需求，可以在``.github/workflows/run.yml``中的``cron``自行修改
