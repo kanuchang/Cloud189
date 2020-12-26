@@ -45,7 +45,8 @@ xxxxxxxx
 ![Enable Actions](http://tu.yaohuo.me/imgs/2020/06/34ca160c972b9927.png)
 2.点击**Enable workflow**
 ![Enable workflow](https://tu.yaohuo.me/imgs/2020/12/bfbae0a0f094daf1.jpg)
-3.修改任意文件后提交一次  
+3.在[ Actions > Cloud189Checkin > Run workflow ]手动运行一次  
+![Run workflow](https://tu.yaohuo.me/imgs/2020/12/3ac171041a7f730e.png)
 
 ## 四、查看运行结果
 Actions > Cloud189Checkin > build  
