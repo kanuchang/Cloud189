@@ -1,5 +1,5 @@
 # File: .github/workflows/repo-sync.yml
-name: sync-t00t00-crypto-cloud189-action
+name: sync-peng4740-Cloud189Checkin
 on:
   schedule:
     - cron: '1 0,15 * * *'
@@ -9,7 +9,7 @@ on:
   push:
     branches: [ master ]
   repository_dispatch:
-    types: sync-t00t00-crypto-cloud189-action
+    types: sync-peng4740-Cloud189Checkin
 jobs:
   repo-sync:
     env:
@@ -21,11 +21,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync t00t00-crypto-cloud189-action
+      - name: sync peng4740-Cloud189Checkin
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/t00t00-crypto/cloud189-action.git"
+          source_repo: "https://github.com/peng4740/Cloud189Checkin-Actions.git"
           source_branch: "master"
           destination_branch: "master"
           github_token: ${{ secrets.PAT }}
